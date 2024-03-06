@@ -1,28 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
 </head>
 <body>
-<script>
 
-function GR() {
-    var url = location.search; //获取url中"?"符后的字串
-    var tR = new Object();
-    if (url.indexOf("?") != -1) {
-        var str = url.substr(1);
-        strs = str.split("&");
-        for(var i = 0; i < strs.length; i ++) {
-            tR[strs[i].split("=")[0]]=decodeURI(strs[i].split("=")[1]);
-        }
-    }
-    return tR;
-} 
-
-var Rt = new Object();
-Rt = GR();
-
-document.write(Rt["text"]==null?"":Rt["text"])
-</script>
+<style>
+a{color:#68d421;display: inline}
+p{color:#68d421;display: inline}
+</style>
+<a href="https://deeplearning.org.cn/user-home?username=%E6%9B%B9%E6%96%87%E4%B9%90">曹文乐</a>
+<p>是</p>
+<a  href="https://www.iciba.com/word?w=dog">dog</a>
 </body>
 </html>
